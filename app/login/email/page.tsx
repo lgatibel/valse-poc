@@ -5,17 +5,16 @@ import bgImage from "@/assets/login-bg.png"
 import ActionButton from "@/components/Buttons/ActionButton"
 import Link from "next/link"
 import Navigation from "@/app/components/Navigation/Navigation"
-import MobileContainer from "@/components/MobileContainer"
 
 
 export default function LoginEmail() {
   return (
-    <MobileContainer>
+    <>
      <BackgoundImage src={bgImage}/>
-     <Navigation/>
-     <div className="w-full flex flex-col flex-grow justify-around gap-16">
+      <div className="w-full flex flex-col flex-grow justify-around gap-16 pb-8 px-8 sm:pb-4 sm:px-4">
+        <Navigation />
         <div className="flex flex-col gap-8">
-          <HeroTitle title="Re !"/>
+          <HeroTitle title="Re !" align="start"/>
           <p>Bon retour parmi nous !</p>
         </div>
         <div className="flex flex-col gap-6">
@@ -25,6 +24,6 @@ export default function LoginEmail() {
         </div>
         <Link href="/forgot-password" className="text-center cursor-pointer">Mot de passe oublié ?</Link>
       </div>
-    </MobileContainer>
+    </>
   )
 }

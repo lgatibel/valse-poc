@@ -16,8 +16,13 @@ export default function HomeLayout({
   children: React.ReactNode
 }) {
   return (
-    <MobileContainer bgColor={'primary'}>
+    <div className="bg-primary w-full min-h-screen">
       {children}
-    </MobileContainer>
+    </div>
   )
 }
+
+
+{/* <div className="bg-primary w-full min-h-screen">
+  {children}
+</div> */}

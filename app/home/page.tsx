@@ -28,7 +28,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="w-full flex flex-col flex-grow gap-24 ">
+    <div className="w-full flex flex-col flex-grow gap-24">
       <HomeNavBar/>
         Home Page
     </div>

@@ -3,11 +3,10 @@ import BackgoundImage from "@/components/BackgroundImage"
 import HeroTitle from "@/components/HeroTitle"
 import Navigation from "@/components/Navigation/Navigation"
 import ActionButton from "@/components/Buttons/ActionButton"
-import MobileContainer from "@/components/MobileContainer"
 
 export default function SignUp() {
   return (
-    <MobileContainer>
+    <>
       <BackgoundImage src={bgImage} />
       <Navigation />
       
@@ -26,6 +25,6 @@ export default function SignUp() {
           <p className="text-center opacity-50">En cliquant sur le bouton s'inscrire, vous accepetez sans reserve les termes et conditions générales d'utilisation</p>
         </div>
       </div>
-    </MobileContainer>
+    </>
   )
 }

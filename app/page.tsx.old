@@ -1,0 +1,16 @@
+import BackgoundImage from "@/components/BackgroundImage"
+import HeroTitle from "@/components/HeroTitle"
+import bgImage from "@/assets/landing-bg.png"
+import MobileContainer from "@/components/MobileContainer"
+
+export default function SplashScreen() {
+  return (
+    <MobileContainer>
+        <BackgoundImage src={bgImage} />
+        <div className="flex flex-col flex-grow gap-6 items-center justify-center">
+          <HeroTitle title="Valse" upperCase={true} italic={true} />
+          <p className="text-center">Découvre une nouvelle façon de faire des rencontre à travers la musique avec Valse.</p>
+        </div>
+    </MobileContainer>
+  )
+}

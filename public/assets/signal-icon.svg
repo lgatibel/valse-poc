@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20">
+  <defs>
+    <linearGradient id="linearGradient-2" x1="20.312" x2="3.866" y1="2.314" y2="17.593" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="rgb(247,131,97)"/>
+      <stop offset="1" stop-color="rgb(245,75,100)"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#linearGradient-2)" fill-rule="evenodd" d="M5 2c0-1.1038208.8961792-2 2-2s2 .8961792 2 2v16c0 1.1038208-.8961792 2-2 2s-2-.8961792-2-2V2zm12 3c0-1.1038208.8961792-2 2-2s2 .8961792 2 2v10c0 1.1038208-.8961792 2-2 2s-2-.8961792-2-2V5zm-6 2c0-1.1038208.8961792-2 2-2s2 .8961792 2 2v6c0 1.1038208-.8961792 2-2 2s-2-.8961792-2-2V7zM0 9c0-1.1038208.8961792-2 2-2s2 .8961792 2 2v1c0 1.1038208-.8961792 2-2 2s-2-.8961792-2-2V9zm22 0c0-1.1038208.8961792-2 2-2s2 .8961792 2 2v1c0 1.1038208-.8961792 2-2 2s-2-.8961792-2-2V9z"/>
+</svg>

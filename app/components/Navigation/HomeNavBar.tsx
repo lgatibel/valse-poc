@@ -1,5 +1,8 @@
 'use client'
 import { useRouter } from 'next/navigation'
+import menuIcon from '@/assets/menu-white.svg'
+import messageIcon from '@/assets/send-white.svg'
+import Image from 'next/image'
 
 export default function HomeNavBar() {
   const router = useRouter()
@@ -7,17 +10,13 @@ export default function HomeNavBar() {
   return (
     <div className="flex w-full justify-between">
       <button className="cursor-pointer" onClick={() => router.back()}>
-        <svg  width="80"
-  height="80" className='w-8 h-8 icon-white'>
-          <use href="./chat.svg" style={{
-            fill: 'red',
-            color: 'green'
-          }}></use>
-        </svg>
-        {/* <img src="/assets/chat.svg" alt="placeholder" width={25} height={25} className="icon-white" /> */}
+        <Image src={menuIcon} alt="menu button" width={32} height={32} />
+
       </button>
-      <span className="text-3xl ">valse</span>
-      <button className="cursor-pointer" onClick={() => router.back()}>{`<-`}</button>
+      <span className="text-4xl bold">valse</span>
+      <button className="cursor-pointer" onClick={() => router.back()}>
+        <Image src={messageIcon} alt="message button" width={24} height={24} />
+      </button>
     </div>
   )
 }

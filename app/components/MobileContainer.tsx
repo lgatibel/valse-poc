@@ -9,7 +9,6 @@ interface Iprops {
 export default function MobileContainer({ children, bgColor = null }: PropsWithChildren<Iprops>) {
     return (
         <main className="sm:p-8 flex flex-col items-center w-full">
-            {/* <div className={`${bgColor ? 'bg-' + bgColor : ''} w-full sm:w-auto flex min-h-screen sm:min-h-[32rem] sm:max-h-[32rem] sm:aspect-mobile flex-col items-center p-8 sm:p-4 relative`}> */}
             <div className={`w-full sm:w-auto flex min-h-screen sm:min-h-[32rem] sm:max-h-[32rem] sm:aspect-mobile flex-col items-center relative`}>
                 <div className="hidden sm:block z-[-8]" style={{
                     position: "absolute",

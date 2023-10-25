@@ -6,8 +6,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'profil-card': '0px 0px 10px 5px',
+      },
       colors: {
         primary: "#151720",
+        shadow: "#b3badb4d",
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],

@@ -1,3 +1,4 @@
+import NotFound from '@/app/components/Error/NotFound'
 import { getProfil } from '@/app/queries/profilQueries'
 import Image from 'next/image'
 import React from 'react'
@@ -34,7 +35,7 @@ export default async function ProfilDetail({ params }: IProps) {
                         <p>{profil.description}</p>
                     </div>
                 </>
-                : <div className="p-4 w-10/12 m-auto bg-red-500 text-center rounded-full" >Error le profil {params.id} n'existe pas</div>}
+                : <NotFound/>}
 
         </div>
     )

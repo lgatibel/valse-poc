@@ -5,6 +5,7 @@ const profilSchema = z.object({
     photo: z.string(),
     name: z.string(),
     age: z.number(),
+    match_percentage: z.number(),
     distance: z.string(),
     description: z.string()
 })

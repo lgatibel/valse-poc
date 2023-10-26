@@ -12,9 +12,9 @@ const profilSchema = z.object({
 
 const profilsSchema = z.array(profilSchema)
 
-type Profil = z.infer<typeof profilSchema>
+export type Profil = z.infer<typeof profilSchema>
 
-type Profils = z.infer<typeof profilsSchema>
+export type Profils = z.infer<typeof profilsSchema>
 
 
 

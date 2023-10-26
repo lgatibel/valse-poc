@@ -3,11 +3,11 @@ import HomeNavBar from '@/components/Navigation/HomeNavBar'
 import firstProfileImage from '@/assets/profile-home-1.png'
 import secondProfileImage from '@/assets/profile-home-2.png'
 import thirdProfileImage from '@/assets/profile-home-3.png'
-import ProfilCard from '@/app/components/ProfilCard'
+import ProfilCard from '@/app/components/Profil/ProfilCard'
 
 export default function Home() {
 
-  const profiles = [
+  const profils = [
     {
       photo: firstProfileImage,
       name: "Jean-michel",
@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col flex-grow gap-12 p-4">
       <HomeNavBar />
-      {profiles.map((profile) => <ProfilCard profile={profile}/>)}
+      {profiles.map((profile) => <ProfilCard profil={profil} />)}
     </div>
   )
 }

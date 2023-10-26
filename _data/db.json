@@ -1,0 +1,28 @@
+{
+    "profils": [
+        {
+            "id": 1,
+            "photo": "/assets/profile-home-1.png",
+            "name": "Jean-michel",
+            "age": 27,
+            "distance": "5km",
+            "description": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Duis portitor tincidun nullable"
+        },
+        {
+            "id": 2,
+            "photo": "/assets/profile-home-2.png",
+            "name": "jean-michel",
+            "age": 22,
+            "distance": "10km",
+            "description": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Duis portitor tincidun nullable"
+        },
+        {
+            "id": 3,
+            "photo": "/assets/profile-home-3.png",
+            "name": "jean-michel",
+            "age": 35,
+            "distance": "1km",
+            "description": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Duis portitor tincidun nullable"
+        }
+    ]
+}

@@ -10,7 +10,7 @@ const config: Config = {
         'profil-card': '0px 0px 10px 5px',
       },
       colors: {
-        primary: "#151720",
+        primary: "#252a39",
         shadow: "#b3badb4d",
       },
       fontFamily: {

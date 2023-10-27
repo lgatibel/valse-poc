@@ -13,24 +13,24 @@ export default function Menu({ showMenu = false, toggleMenu }: IProps) {
     const menuItems = [
         {
             label: "Mon Profil",
-            href: "/"
+            href: "/home"
         },
         {
             label: "Mes préférences",
-            href: "/"
+            href: "/home"
         },
         {
             label: "Mon Compte",
-            href: "/"
+            href: "/home"
         }
     ]
 
     return (
-        <div className={`${showMenu ? 'translate-x-0' : 'translate-x-3/4'} delay-1000 duration-1000 flex flex-col absolute top-0 bottom-0 left- w-9/12 bg-primary pl-8 p-2 gap-16`}>
-            <button onClick={toggleMenu}>
+        <div className={`${showMenu ? 'translate-x-0' : 'translate-x-[-100%]'} delay-150 duration-500 flex flex-col absolute top-0 bottom-0  left-0 w-3/4 bg-primary pl-8 p-2 gap-16`}>
+            <button  className="flex p-8 justify-end" onClick={toggleMenu}>
                 <Ico icon="FiX" />
             </button>
-            <div className="text-4xl pt-32">MenuI</div>
+            <div className="text-4xl pt-12">Menu</div>
             <div className="flex flex-col gap-16">
                 {menuItems.map(({ label, href }) =>
                     <Link href={href}>

@@ -17,7 +17,7 @@ export default function HomeNavBar() {
 
   return (
     <div className="flex w-full justify-between">
-      <Menu showMenu={showMenu} />
+      <Menu showMenu={showMenu} toggleMenu={toggleMenu} />
       <button className="cursor-pointer" onClick={toggleMenu}>
         <Ico icon="FiMenu" size={32} />
       </button>

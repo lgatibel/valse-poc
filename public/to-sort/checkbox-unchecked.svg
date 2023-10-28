@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <rect id="rect-1" width="30" height="30" x="0" y="0"/>
+    <path id="path-2" fill-rule="evenodd" d="M17.25 3.75h-4.5c-4.96723509 0-9 4.03276491-9 9v4.5c0 4.96723557 4.03276491 9 9 9h4.5c4.96723557 0 9-4.03276443 9-9v-4.5c0-4.96723509-4.03276443-9-9-9zm-.5 2.5h-3.5c-3.86340523 0-7 3.13659477-7 7v3.5c0 3.86340523 3.13659477 7 7 7h3.5c3.86340523 0 7-3.13659477 7-7v-3.5c0-3.86340523-3.13659477-7-7-7zm-.5 7.5v-4c0-.55191517-.44808483-1-1-1h-.5c-.55191517 0-1 .44808483-1 1v4h-4c-.55191517 0-1 .44808483-1 1v.5c0 .55191517.44808483 1 1 1h4v4c0 .55191422.44808483 1 1 1h.5c.55191517 0 1-.44808578 1-1v-4h4c.55191422 0 1-.44808483 1-1v-.5c0-.55191517-.44808578-1-1-1h-4z"/>
+    <linearGradient id="linearGradient-3" x1="21.328" x2="7.095" y1="6.354" y2="23.542" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="rgb(247,131,97)"/>
+      <stop offset="1" stop-color="rgb(245,75,100)"/>
+    </linearGradient>
+    <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="30" height="30" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#path-2"/>
+    </mask>
+  </defs>
+  <g>
+    <use fill="url(#linearGradient-3)" xlink:href="#path-2"/>
+    <g mask="url(#mask-4)"/>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 
 import HeroTitle from "@/components/HeroTitle"
 import BackgoundImage from "@/components/BackgroundImage"
-import bgImage from "@/assets/login-bg.png"
+import bgImage from "@/assets/backgrounds/login.png"
 import ActionButton from "@/components/Buttons/ActionButton"
 import Link from "next/link"
 import Navigation from "@/app/components/Navigation/Navigation"

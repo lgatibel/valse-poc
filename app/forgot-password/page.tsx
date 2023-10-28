@@ -1,7 +1,7 @@
 import ActionButton from "@/components/Buttons/ActionButton"
 import BackgoundImage from "@/components/BackgroundImage"
 import HeroTitle from "@/components/HeroTitle"
-import bgImage from "@/assets/forgot-password-bg.png"
+import bgImage from "@/assets/backgrounds/forgot-password.png"
 import Navigation from "@/components/Navigation/Navigation"
 
 export default function ForgotPassword() {

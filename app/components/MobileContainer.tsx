@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { PropsWithChildren } from 'react'
-import src from '@/assets/mobile-canvas.png'
+import src from '@/assets/canvas/iphone-canvas.png'
 
 interface Iprops {
     bgColor?: 'primary' | null

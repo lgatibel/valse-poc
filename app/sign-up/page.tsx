@@ -1,4 +1,4 @@
-import bgImage from "@/assets/signup-bg.png"
+import bgImage from "@/assets/backgrounds/signup.png"
 import BackgoundImage from "@/components/BackgroundImage"
 import HeroTitle from "@/components/HeroTitle"
 import Navigation from "@/components/Navigation/Navigation"

@@ -12,7 +12,7 @@ export default function Menu({ showMenu = false, toggleMenu }: IProps) {
     const menuItems = [
         {
             label: "Mon Profil",
-            href: "/home"
+            href: "/my-profil"
         },
         {
             label: "Mes préférences",

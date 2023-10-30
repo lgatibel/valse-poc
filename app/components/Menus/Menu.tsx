@@ -1,5 +1,5 @@
 'use client'
-import Ico from '@/app/components/Ico'
+import Ico from '@/app/components/Icon'
 import Link from 'next/link'
 
 interface IProps {

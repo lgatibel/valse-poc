@@ -1,6 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation'
-import Ico from '@/app/components/Ico'
+import Ico from '@/app/components/Icon'
 import Menu from '@/app/components/Menus/Menu';
 import { useState } from 'react';
 

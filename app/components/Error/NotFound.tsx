@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Ico from '@/app/components/Ico'
+import Ico from '@/app/components/Icon'
 
 export default function NotFound() {
     return (

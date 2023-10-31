@@ -4,13 +4,13 @@ type IconModule = typeof import('react-icons/fi/index')
 import colors from 'tailwindcss/colors'
 
 
-interface Icons {
+interface IProps {
     icon: Exclude<keyof IconModule, number>,
     size?: number,
     color?: string,
 }
 
-export default function Icons({ icon, size = 24, color = 'white' }: Icons) {
+export default function Icon({ icon, size = 24, color = 'white' }: IProps) {
     const test = colors.cyan[100]
 
     return createElement(

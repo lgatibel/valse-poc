@@ -1,6 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation'
-import Ico from '@/app/components/Ico'
+import Icon from '@/app/components/Icon'
 import Menu from '@/app/components/Menus/Menu';
 import { useState } from 'react';
 
@@ -19,11 +19,11 @@ export default function HomeNavBar() {
     <div className="flex w-full justify-between">
       <Menu showMenu={showMenu} toggleMenu={toggleMenu} />
       <button className="cursor-pointer" onClick={toggleMenu}>
-        <Ico icon="FiMenu" size={32} />
+        <Icon icon="FiMenu" size={32} />
       </button>
       <span className="text-4xl bold">valse</span>
       <button className="cursor-pointer" onClick={() => router.back()}>
-        <Ico icon="FiSend" size={24} />
+        <Icon icon="FiSend" size={24} />
       </button>
     </div>
   )

@@ -2,7 +2,7 @@
     "profils": [
         {
             "id": 1,
-            "photo": "/assets/profile-home-1.png",
+            "photo": "/assets/profils/profile-home-1.png",
             "name": "Jean-michel",
             "age": 27,
             "match_percentage": 92,
@@ -11,7 +11,7 @@
         },
         {
             "id": 2,
-            "photo": "/assets/profile-home-2.png",
+            "photo": "/assets/profils/profile-home-2.png",
             "name": "jean-michel",
             "age": 22,
             "match_percentage": 85,
@@ -20,7 +20,7 @@
         },
         {
             "id": 3,
-            "photo": "/assets/profile-home-3.png",
+            "photo": "/assets/profils/profile-home-3.png",
             "name": "jean-michel",
             "match_percentage": 78,
             "age": 35,

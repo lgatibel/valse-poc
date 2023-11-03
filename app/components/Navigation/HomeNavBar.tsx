@@ -17,13 +17,13 @@ export default function HomeNavBar() {
 
 
   return (
-    <div className="flex w-full justify-between">
+    <div className="flex w-full justify-between items-center">
       <Menu showMenu={showMenu} toggleMenu={toggleMenu} />
       <button className="cursor-pointer" onClick={toggleMenu}>
         <Icon icon="FiMenu" size={32} />
       </button>
       <span className="text-4xl bold">valse</span>
-      <Link href="/chats" className="cursor-pointer" onClick={() => router.back()}>
+      <Link href="/chats" className="cursor-pointer" >
         <Icon icon="FiSend" size={24} />
       </Link>
     </div>

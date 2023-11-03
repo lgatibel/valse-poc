@@ -7,7 +7,7 @@ interface IProps {
   className?: string;
 }
 
-export default function Navigation({ action = 'back', className }: IProps) {
+export default function Navigation({ action = 'back', className = '' }: IProps) {
   const router = useRouter()
 
   return (

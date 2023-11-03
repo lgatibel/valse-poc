@@ -47,7 +47,9 @@ export default function Chats() {
 
     return (
         <div className="w-full overflow-hidden flex flex-col gap-6">
+            <div className="pt-8 px-4">
             <Navigation backUrl='/home'/>
+            </div>
             <div className="flex items-center bg-gray-700 rounded-lg p-2.5 m-4">
                 <Icon icon="FiSearch" />
                 <input className="bg-gray-700 pl-2" type="text" placeholder="Rechercher" />

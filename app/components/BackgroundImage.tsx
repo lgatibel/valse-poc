@@ -18,7 +18,6 @@ export default function BackgoundImage({ src }: IProps) {
         style={{
           objectFit: 'cover',
           zIndex: '-11',
-          background: `linear-gradient(to bottom, rgba(36, 42, 56, 0.3), rgba(36, 42, 56, 1) 80%)`
         }} />
     </div>
   )

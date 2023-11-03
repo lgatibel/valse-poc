@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <div className="w-full flex flex-col flex-grow gap-12 p-4">
       <HomeNavBar />
-      {profils ? profils.map((profil) => { return <ProfilCard profil={profil} /> }) : null}
+      {profils ? profils.map((profil, index) => { return <ProfilCard key={index} profil={profil} /> }) : null}
     </div>
   )
 }

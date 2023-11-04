@@ -22,7 +22,7 @@ export default function Navigation({ action = 'back', className = '', backUrl }:
   }
 
   return (
-    <div className={`flex w-full justify-between ${className}`}>
+    <div className={`flex w-full justify-between aboslute ${className}`}>
       <button className="text-5xl cursor-pointer" onClick={handleBackButton}>
         {action === 'back' ?
           <Icon icon="FiArrowLeft" size={32} />

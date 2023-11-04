@@ -8,25 +8,8 @@ interface Iprops {
 
 export default function MobileContainer({ children, bgColor = null }: PropsWithChildren<Iprops>) {
     return (
-        <main className="sm:p-8 flex flex-col items-center w-full">
-            <div className={`w-full sm:w-auto flex min-h-screen sm:min-h-[32rem] sm:max-h-[32rem] sm:aspect-mobile flex-col items-center relative`}>
-                <div className="hidden sm:block z-[-8]" style={{
-                    position: "absolute",
-                    width: "120%",
-                    height: "110%",
-                    left: "-10%",
-                    top: "-3%",
-                }}>
-                    <Image src={src} alt="placeholder" placeholder="blur"
-                        quality={100}
-                        fill
-                        sizes="100vw"
-                        style={{
-                            objectFit: 'cover',
-                        }} />
-                </div>
-                {children}
-            </div>
+        <main className="no-scrollbar shadow-profil-card shadow-shadow overflow-x-hidden flex py-6 flex-col items-center w-full max-w-md relative h-screen">
+            {children}
         </main>
     )
 }

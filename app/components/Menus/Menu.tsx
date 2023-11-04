@@ -30,7 +30,7 @@ export default function Menu({ showMenu = false, toggleMenu }: IProps) {
     }
 
     return (
-        <div className={`${showMenu ? 'translate-x-0' : 'translate-x-[-100%]'} delay-150 duration-500 flex absolute top-0 bottom-0 left-0 w-full`}>
+        <div className={`${showMenu ? 'translate-x-0' : 'translate-x-[-100%]'} delay-150 duration-500 flex absolute top-0 bottom-0 left-0 w-full z-50`}>
             <div className="flex flex-col w-3/4 bg-primary pl-8 p-2 gap-16">
                 <button className="flex p-8 justify-end" onClick={handleclose}>
                     <Icon icon="FiX" />

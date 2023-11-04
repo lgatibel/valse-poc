@@ -18,9 +18,8 @@
 }
 
 body {
-  height: 100%;
   color: rgb(var(--foreground-rgb));
-  @apply md:p-2.5;
+  @apply md:p-6 h-screen;
   /* background: linear-gradient(
       to bottom,
       transparent,

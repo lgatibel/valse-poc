@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`flex flex-col items-center bg-primary justify-center min-h-screen ${inter.className}`}>
+      <body className={`lg:h-screen flex flex-col items-center bg-primary justify-center min-h-screen ${inter.className}`}>
         <MobileContainer bgColor={'primary'}>
           {children}
         </MobileContainer>

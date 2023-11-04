@@ -1,6 +1,6 @@
 import NotFound from '@/app/components/Error/NotFound'
 import Navigation from '@/app/components/Navigation/Navigation'
-import { Profil, getProfil } from '@/app/queries/profilQueries'
+import { getProfil } from '@/app/queries/profilQueries'
 import Image from 'next/image'
 import React from 'react'
 
@@ -11,17 +11,12 @@ interface IProps {
     }
 }
 
-
-// export async function generateStaticParams() {
-//     return [{ params: { id: 1 } }, { params: { id: 2 } }, { params: { id: 3 } }]
-// }
-
 export default async function ProfilDetail({ params }: IProps) {
     const profil = await getProfil(params.id)
 
 
     return (
-        <div className="flex flex-col w-full h-screen relative">
+        <div className="absolute top-0 flex flex-col w-full h-screen">
             {profil !== null ?
                 <>
                     <div className="absolute z-10 px-4 py-8">

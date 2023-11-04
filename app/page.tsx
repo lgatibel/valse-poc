@@ -9,7 +9,7 @@ export default function Login() {
   return (
     <>
       <BackgoundImage src={bgImage} />
-      <div className="flex flex-col flex-grow gap-16 p-8 sm:p-4">
+      <div className="flex flex-col flex-grow gap-24 p-8 pb-0">
         <div className="flex flex-col flex-grow gap-6 items-center justify-end">
           <HeroTitle title="La musique au coeur de tes rencontres" />
           <p className="text-center">Découvre une nouvelle façon de faire des rencontre à travers la musique avec Valse.</p>

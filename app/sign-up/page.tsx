@@ -9,7 +9,7 @@ export default function SignUp() {
     <>
       <BackgoundImage src={bgImage} />
       <Navigation />
-      <div className="flex flex-col flex-grow w-full gap-16 pt-8 pb-8 px-8">
+      <div className="flex flex-col justify-between flex-grow w-full gap-16 pt-24 p-8 pb-0">
         <div className="w-full">
           <HeroTitle align={'start'} title="Créer un compte" />
         </div>

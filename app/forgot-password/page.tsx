@@ -9,7 +9,7 @@ export default function ForgotPassword() {
     <>
       <BackgoundImage src={bgImage} />
       <Navigation action="close" />
-      <div className="flex flex-col flex-grow  p-8 sm:p-4 gap-16">
+      <div className="flex flex-col flex-grow p-8 pt-16 gap-16">
         <div className="flex flex-col gap-8 pt-16">
           <HeroTitle title="Mot de passe oublié ?" />
           <p>Saisis ton adresse e-mail. Tu recevras un lien pour créer un nouveau mot de passe.</p>

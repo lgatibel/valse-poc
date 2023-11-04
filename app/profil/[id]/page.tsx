@@ -19,9 +19,7 @@ export default async function ProfilDetail({ params }: IProps) {
         <div className="absolute top-0 flex flex-col w-full h-screen">
             {profil !== null ?
                 <>
-                    <div className="absolute z-10 px-4 py-8">
-                        <Navigation />
-                    </div>
+                    <Navigation />
                     <Image sizes="100vw" fill style={{ objectFit: 'cover' }} src={profil.photo} alt="image profil" />
                     <div className="absolute bottom-0 h-[30%] left-0 rounded-t-lg bg-primary p-4 flex flex-col gap-8">
                         <div className="flex justify-center">

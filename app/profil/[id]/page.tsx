@@ -7,12 +7,12 @@ import React from 'react'
 
 interface IProps {
     params: {
-        id: number
+        id: string
     }
 }
 
 export default async function ProfilDetail({ params }: IProps) {
-    const profil = await getProfil(params.id)
+    const profil = await getProfil(parseInt(params.id))
 
 
     return (

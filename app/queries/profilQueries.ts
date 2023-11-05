@@ -1,8 +1,11 @@
+import prisma from "@/lib/prisma"
 import { z } from "zod"
 
 const profilSchema = z.object({
     id: z.number(),
-    photo: z.string(),
+    photo: z.array(z.object({
+        path: z.string()
+    })).optional(),
     name: z.string(),
     age: z.number(),
     match_percentage: z.number(),
@@ -19,8 +22,9 @@ export type Profils = z.infer<typeof profilsSchema>
 
 
 const getProfils = async (): Promise<Profils | null> => {
-    const data = await fetch("http://localhost:4000/profils")
-        .then((res) => res.json())
+    const data = await prisma.user.findMany()
+
+    console.log("USERS => ", data)
 
     try {
         const parsedData = profilsSchema.parse(data)
@@ -34,11 +38,9 @@ const getProfils = async (): Promise<Profils | null> => {
 
 
 const getProfil = async (id: number): Promise<Profil | null> => {
-    const data = await fetch(`http://localhost:4000/profils/${id}`)
-        .then((res) => res.json())
-
     try {
-        const parsedData = profilSchema.parse(data)
+        const data = await prisma.user.findFirst({ where: { id } })
+   const parsedData = profilSchema.parse(data)
         return parsedData;
     }
     catch (e) {

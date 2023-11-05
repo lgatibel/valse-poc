@@ -24,11 +24,8 @@ export type Profils = z.infer<typeof profilsSchema>
 const getProfils = async (): Promise<Profils | null> => {
     const data = await prisma.user.findMany()
 
-    console.log("USERS => ", data)
-
     try {
-        const parsedData = profilsSchema.parse(data)
-        return parsedData;
+        return profilsSchema.parse(data);
     }
     catch (e) {
         return null
@@ -40,8 +37,7 @@ const getProfils = async (): Promise<Profils | null> => {
 const getProfil = async (id: number): Promise<Profil | null> => {
     try {
         const data = await prisma.user.findFirst({ where: { id } })
-   const parsedData = profilSchema.parse(data)
-        return parsedData;
+        return profilSchema.parse(data)
     }
     catch (e) {
         return null

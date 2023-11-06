@@ -13,10 +13,8 @@ export default function Navigation({ action = 'back', className = '', backUrl }:
 
   const handleBackButton = () => {
     if (backUrl) {
-      console.log(backUrl)
       router.replace(backUrl)
     } else {
-      console.log("NO BACK URL")
       router.back();
     }
   }

@@ -16,7 +16,7 @@ export default function Login() {
         </div>
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
-            <LinkButton to="/login/email">Connexion</LinkButton>
+            <LinkButton to="/login">Connexion</LinkButton>
             <LinkButton to="/sign-up">Inscription</LinkButton>
           </div>
           <div className="flex flex-col gap-2">

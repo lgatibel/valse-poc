@@ -16,7 +16,7 @@ export default function ForgotPassword() {
         </div>
         <div className="flex flex-col gap-6">
           <input className="placeholder:text-white bg-white/[.1] rounded-full px-4 py-2.5" placeholder="Ton email" />
-          <ActionButton>Envoyer</ActionButton>
+          <ActionButton label="Envoyer"/>
         </div>
       </div>
     </>

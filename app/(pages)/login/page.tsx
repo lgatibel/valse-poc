@@ -20,7 +20,7 @@ export default function LoginEmail() {
         <div className="flex flex-col gap-6">
           <input type="text" className="placeholder:text-white bg-white/[.1] rounded-full px-4 py-2.5" placeholder="Email" />
           <input type="password" className="placeholder:text-white bg-white/[.1] rounded-full px-4 py-2.5" placeholder="Mot de passe" />
-          <ActionButton>connexion</ActionButton>
+          <ActionButton label="connexion"/>
         </div>
         <div className="flex flex-col gap-6">
          

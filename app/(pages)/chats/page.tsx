@@ -47,7 +47,7 @@ export default function Chats() {
 
     return (
         <div className="w-full  flex flex-col">
-            <Navigation backUrl='/home' />
+            <Navigation backUrl='/' />
             <div className="flex flex-col gap-6 pt-16 px-8">
                 <div className="flex items-center bg-gray-700 rounded-lg p-2.5">
                     <Icon icon="FiSearch" />

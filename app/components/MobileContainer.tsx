@@ -2,11 +2,13 @@ import React, { PropsWithChildren } from 'react'
 
 interface Iprops {
     bgColor?: 'primary' | null
+    noPadding?: boolean
 }
 
-export default function MobileContainer({ children, bgColor = null }: PropsWithChildren<Iprops>) {
+export default function MobileContainer({ children, bgColor = null, noPadding = false }: PropsWithChildren<Iprops>) {
+
     return (
-        <main className="no-scrollbar shadow-profil-card shadow-shadow overflow-x-hidden flex py-6 flex-col items-center w-full max-w-md relative h-screen">
+        <main id="sidebar-content" className={`${noPadding ? '' : 'py-6'} no-scrollbar shadow-profil-card shadow-shadow overflow-hidden flex flex-col items-center w-full max-w-md relative md:aspect-mobile h-screen md:max-w-[400px]`}>
             {children}
         </main>
     )

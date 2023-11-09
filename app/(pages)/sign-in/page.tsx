@@ -2,10 +2,18 @@
 import HeroTitle from "@/components/HeroTitle"
 import BackgoundImage from "@/components/BackgroundImage"
 import bgImage from "@/assets/backgrounds/landing.png"
-import LinkButton from "@/components/Buttons/LinkButton"
+import Button from "@/app/components/Buttons/Button"
+import { SignInButton, SignUpButton, currentUser } from "@clerk/nextjs"
+import { redirect } from "next/navigation"
 
 
-export default function Login() {
+export default async function  Login() {
+  const user = await currentUser();
+
+  if (user) {
+    redirect("/")
+  }
+
   return (
     <>
       <BackgoundImage src={bgImage} />
@@ -16,12 +24,12 @@ export default function Login() {
         </div>
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
-            <LinkButton to="/login/email">Connexion</LinkButton>
-            <LinkButton to="/sign-up">Inscription</LinkButton>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="sm:text-sm text-center opacity-60">Ou connecte toi avec</p>
-            <LinkButton to="#">F</LinkButton>
+            <SignInButton mode="modal">
+              <Button label="Connexion"/>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <Button label="Inscription"/>
+            </SignUpButton>
           </div>
         </div>
       </div>

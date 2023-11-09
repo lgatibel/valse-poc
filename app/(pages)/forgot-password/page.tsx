@@ -1,4 +1,4 @@
-import ActionButton from "@/components/Buttons/ActionButton"
+import ActionButton from "@/app/components/Buttons/FormButton"
 import BackgoundImage from "@/components/BackgroundImage"
 import HeroTitle from "@/components/HeroTitle"
 import bgImage from "@/assets/backgrounds/forgot-password.png"

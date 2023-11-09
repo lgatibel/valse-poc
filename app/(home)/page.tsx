@@ -10,10 +10,8 @@ export default async function Home() {
 
   return (
     <AppLayout>
-      <div className="relative w-full flex flex-col flex-grow gap-12 h-screen p-4">
-        <div className="w-full flex flex-col gap-12 px-4 h-screen">
+      <div className="relative w-full flex flex-col gap-12 p-8 pt-24">
           {profils ? profils.map((profil, index) => { return <ProfilCard key={index} profil={profil} /> }) : null}
-        </div>
       </div>
     </AppLayout>
   )
